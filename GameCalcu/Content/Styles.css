@@ -1,6 +1,15 @@
 ﻿body {
+    
 }
 
-nav {
-    opacity: 0.8;
+#MainContent{
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+.divider{
+    width: auto;
+    height: auto;
+    padding-top: 20px;
+
 }

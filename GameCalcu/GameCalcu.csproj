@@ -84,12 +84,17 @@
     <Content Include="Content\Styles.css" />
     <Content Include="Default.aspx" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="game1.aspx" />
+    <Content Include="game2.aspx" />
+    <Content Include="game3.aspx" />
+    <Content Include="game4.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <None Include="Scripts\jquery-1.9.1.intellisense.js" />
     <Content Include="Scripts\jquery-1.9.1.js" />
     <Content Include="Scripts\jquery-1.9.1.min.js" />
     <Content Include="Scripts\npm.js" />
+    <Content Include="Summary.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -114,6 +119,34 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="game1.aspx.cs">
+      <DependentUpon>game1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="game1.aspx.designer.cs">
+      <DependentUpon>game1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="game2.aspx.cs">
+      <DependentUpon>game2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="game2.aspx.designer.cs">
+      <DependentUpon>game2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="game3.aspx.cs">
+      <DependentUpon>game3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="game3.aspx.designer.cs">
+      <DependentUpon>game3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="game4.aspx.cs">
+      <DependentUpon>game4.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="game4.aspx.designer.cs">
+      <DependentUpon>game4.aspx</DependentUpon>
+    </Compile>
     <Compile Include="MasterPages\Frontend.Master.cs">
       <DependentUpon>Frontend.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -125,6 +158,13 @@
     <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
     <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Summary.aspx.cs">
+      <DependentUpon>Summary.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Summary.aspx.designer.cs">
+      <DependentUpon>Summary.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="obj\Debug\TempPE\" />
