@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("GameCalcu")]
+[assembly: AssemblyTitle("GameCalc")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Hewlett-Packard Company")]
-[assembly: AssemblyProduct("GameCalcu")]
+[assembly: AssemblyProduct("GameCalc")]
 [assembly: AssemblyCopyright("Copyright © Hewlett-Packard Company 2015")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("839358ec-2c98-471d-9fc5-6ad74318208f")]
+[assembly: Guid("acf06706-1390-4bd4-bc0d-84f364cc0509")]
 
 // Version information for an assembly consists of the following four values:
 //
