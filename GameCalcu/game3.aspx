@@ -1,10 +1,13 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs" MasterPageFile="~/MasterPages/Frontend.Master" Inherits="week5.Default" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="game3.aspx.cs" MasterPageFile="~/MasterPages/Frontend.Master" Inherits="GameCalcu.game3" %>
 
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <title>Splatoon Game 1</title>
+    <title>Splatoon Game 3</title>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="cpMainContent" runat="server">
+
+    <img src="Images/squid-girl2.png" id="bgG3" alt="">
+
     <div class="container">
         <div class="row">
             <div class="row-fluid">

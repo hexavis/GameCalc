@@ -63,7 +63,6 @@
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
-    <Content Include="MasterPages\Frontend.Master" />
     <Content Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
     <Content Include="packages.config" />
     <Content Include="Scripts\jquery-1.9.1.min.map" />
@@ -88,8 +87,16 @@
     <Content Include="game2.aspx" />
     <Content Include="game3.aspx" />
     <Content Include="game4.aspx" />
+    <Content Include="Images\arrowBG.png" />
+    <Content Include="Images\boy-squid.png" />
+    <Content Include="Images\girl-squid.png" />
+    <Content Include="Images\kallie-marie.png" />
+    <Content Include="Images\logo.png" />
+    <Content Include="Images\squid-boy2.png" />
+    <Content Include="Images\squid-girl2.png" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="MasterPages\Frontend.Master" />
     <None Include="Scripts\jquery-1.9.1.intellisense.js" />
     <Content Include="Scripts\jquery-1.9.1.js" />
     <Content Include="Scripts\jquery-1.9.1.min.js" />

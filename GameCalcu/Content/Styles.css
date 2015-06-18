@@ -2,14 +2,28 @@
     
 }
 
-#MainContent{
-    margin-top: 70px;
-    margin-bottom: 70px;
-}
-
 .divider{
     width: auto;
     height: auto;
     padding-top: 20px;
 
+}
+
+#MainContent {
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+#bg, #bgG1, #bgG2, #bgG3, #bgG4, #bgSum {
+  position: fixed; 
+  top: 0; 
+  left: 0; 
+	
+  /* Preserve aspet ratio */
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.navbar-brand{
+    padding: 5px;
 }

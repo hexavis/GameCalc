@@ -1,4 +1,4 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Frontend.master.cs" Inherits="COMP2007_Lesson05_Part2.MasterPages.Frontend" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Fronted.Master.cs" Inherits="GameCalcu.MasterPages.Frontend1" %>
 
 <!DOCTYPE html>
 
@@ -12,7 +12,6 @@
     <link href="/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <link href="/Content/bootstrap-theme.min.css" rel="stylesheet" />
     <link href="/Content/Styles.css" rel="stylesheet" type="text/css" />
-    <link href="/Content/main.css" rel="stylesheet" />
 </head>
 <body>
     <div class="container-fluid">
@@ -29,21 +28,23 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand" href="#">Splatoon Game Calculator</a>
+                         <a class="navbar-brand" href="#">
+        <img alt="Brand" src="Images/logo.png">
+      </a>
                     </div>
                     <!-- navbar-header -->
 
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav">
-                            <li><a href="/">Home</a></li>
-                            <li><a href="Contact.aspx">Contact</a></li>
+                            <li><a href="/"></a></li>
+                            <li><a href=""></a></li>
                         </ul>
                         <!-- nav navbar-nav -->
 
 
                         <ul class="nav navbar-nav navbar-right">
-                            <li><a href="About.aspx">About</a></li>
+                            <li><a href=""></a></li>
                         </ul>
                         <!-- nav navbar-nav navbar-right -->
                     </div>
@@ -53,6 +54,7 @@
                 <!-- navbar navbar-default -->
 
                 <section id="MainContent">
+                    <img src="Images/arrowBG.png" id="bg" alt="">
                     <asp:ContentPlaceHolder ID="cpMainContent" runat="server"></asp:ContentPlaceHolder>
                 </section>
                 <footer class="container-fluid">

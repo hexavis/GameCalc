@@ -1,10 +1,13 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs" MasterPageFile="~/MasterPages/Frontend.Master" Inherits="week5.Default" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="game4.aspx.cs" MasterPageFile="~/MasterPages/Frontend.Master" Inherits="GameCalcu.game4" %>
 
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <title>Splatoon Game 1</title>
+    <title>Splatoon Game 4</title>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="cpMainContent" runat="server">
+
+    <img src="Images/squid-boy2.png" id="bgG4" alt="">
+
     <div class="container">
         <div class="row">
             <div class="row-fluid">
@@ -65,7 +68,7 @@
 
                 <!-- the next and submit button -->
                 <div class="divider"></div>
-                <asp:Button ID="submitB" runat="server" Text="Summary" OnClick="" />
+                <asp:Button ID="submitB" runat="server" Text="Summary" OnClick="submitB_Click" />
 
             </div>
             <!-- end col-md-6 -->

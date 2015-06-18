@@ -7,10 +7,10 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace COMP2007_Lesson05_Part2.MasterPages {
+namespace GameCalcu.MasterPages {
     
     
-    public partial class Frontend {
+    public partial class Frontend1 {
         
         /// <summary>
         /// head control.

@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs" MasterPageFile="~/MasterPages/Frontend.Master" Inherits="week5.Default" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs" MasterPageFile="~/MasterPages/Frontend.Master" Inherits="GameCalcu.Default" %>
 
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
@@ -16,7 +16,7 @@
                 <h1>Make a welcome Page</h1>
 
                 <asp:Button ID="beginB" runat="server" Text="Begin" OnClick="beginB_Click" />
-            </div>
+         
         </div>
     </div>
 

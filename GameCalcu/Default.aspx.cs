@@ -5,15 +5,10 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace week5
+namespace GameCalcu
 {
     public partial class Default : System.Web.UI.Page
     {
-
-        //set all the information
-        decimal playerScore, opponentScore, pointsAllowed;
-        int specNum, winCount, loseCount;
-
         protected void Page_Load(object sender, EventArgs e)
         {
 
@@ -21,7 +16,7 @@ namespace week5
         protected void beginB_Click(object sender, EventArgs e)
         {
             //switch to first game input page
-            Server.Transfer("game1.aspx", true);
+            Response.Redirect("game1.aspx");
         }
         
     }

@@ -5,9 +5,9 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace COMP2007_Lesson05_Part2.MasterPages
+namespace GameCalcu.MasterPages
 {
-    public partial class Frontend : System.Web.UI.MasterPage
+    public partial class Frontend1 : System.Web.UI.MasterPage
     {
         protected void Page_Load(object sender, EventArgs e)
         {
