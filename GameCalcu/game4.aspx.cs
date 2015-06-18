@@ -20,21 +20,42 @@ namespace GameCalcu
 
         protected void submitB_Click(object sender, EventArgs e)
         {
-            //gather and validate the information for game 4
-            if (status.SelectedValue == "win")
+            //gather and validate the information for game 1
+            Page.Validate();
+            if (Page.IsValid)
             {
-                gameStatus = 1;
+                if (status.SelectedValue == "win")
+                {
+                    gameStatus = 1;
+                }
+
+                playerScore = System.Convert.ToDecimal(TextBoxPScore.Text);
+                opponentScore = System.Convert.ToDecimal(TextBoxOScore.Text);
+                pointsAllowed = System.Convert.ToInt32(TextBoxFScore.Text);
+                specNum = System.Convert.ToInt32(TextBoxSpec.Text);
+
+                Response.Redirect("Summary.aspx");
             }
-           
 
-            playerScore = System.Convert.ToDecimal(TextBoxPScore.Text);
-            opponentScore = System.Convert.ToDecimal(TextBoxOScore.Text);
-            pointsAllowed = System.Convert.ToInt32(TextBoxFScore.Text);
-            specNum = System.Convert.ToInt32(TextBoxSpec.Text);
 
-            Response.Redirect("Summary.aspx");
+        }
 
-           
+        protected void NotOver_ServerValidate(object source, ServerValidateEventArgs args)
+        {
+            decimal allowP = System.Convert.ToDecimal(TextBoxFScore.Text);
+            decimal playS = System.Convert.ToDecimal(TextBoxPScore.Text);
+            decimal oppS = System.Convert.ToDecimal(TextBoxOScore.Text);
+            decimal total = playS + oppS;
+
+            if (total > allowP)
+            {
+                args.IsValid = false;
+            }
+            else
+            {
+                args.IsValid = true;
+            }
+
         }
     }
 }

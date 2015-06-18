@@ -19,7 +19,7 @@ namespace GameCalcu
             nLose.Text = lose.ToString();
 
 
-            decimal per = wins / lose;
+            decimal per = Decimal.Divide(wins, 4);
             winPer.Text = per.ToString();
 
             decimal pscore = game1.playerScore + game2.playerScore + game3.playerScore + game4.playerScore;
@@ -27,6 +27,9 @@ namespace GameCalcu
 
             decimal oscore = game1.opponentScore + game2.opponentScore + game3.opponentScore + game4.opponentScore;
             coScore.Text = oscore.ToString();
+
+            decimal allowscore = game1.pointsAllowed + game2.pointsAllowed + game3.pointsAllowed + game4.pointsAllowed;
+            allowScore.Text = allowscore.ToString();
 
             decimal diff = pscore - oscore;
             scoreDif.Text = diff.ToString();

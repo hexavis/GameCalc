@@ -10,7 +10,7 @@
 namespace GameCalcu {
     
     
-    public partial class game3 {
+    public partial class game1 {
         
         /// <summary>
         /// status control.

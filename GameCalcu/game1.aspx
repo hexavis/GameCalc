@@ -1,12 +1,12 @@
-﻿<%@ Page Language="C#" UnobtrusiveValidationMode="None" AutoEventWireup="true" CodeBehind="game3.aspx.cs" MasterPageFile="~/MasterPages/Frontend.Master" Inherits="GameCalcu.game3" %>
+﻿<%@ Page Language="C#" UnobtrusiveValidationMode="None" AutoEventWireup="true" CodeBehind="game1.aspx.cs" MasterPageFile="~/MasterPages/Frontend.Master" Inherits="GameCalcu.game1" %>
 
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <title>Splatoon Game 3</title>
+    <title>Splatoon Game 1</title>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="cpMainContent" runat="server">
 
-    <img src="Images/squid-girl2.png" id="bgG3" alt="">
+    <img src="Images/girl-squid.png" id="bgG1" alt="">
 
     <div class="container">
         <div class="row">
@@ -66,14 +66,20 @@
                     <asp:TextBox CssClass="form-control" ID="TextBoxSpec" runat="server"></asp:TextBox>
                 </div>
 
-                <!-- the next and submit button -->
+                <!--Validation section -->
+
+
+                <!-- the next button -->
                 <div class="divider"></div>
                 <asp:Button ID="nextB" runat="server" Text="Next" OnClick="nextB_Click" />
 
+                <!-- Validation stuff-->
+
+
+
             </div>
             <!-- end col-md-6 -->
-
-             <div class="col-md-4">
+            <div class="col-md-4">
                 <div class="validation">
                     <!-- required fields-->
                     <div>
@@ -133,8 +139,8 @@
                     </div>
                 </div>
             </div><!-- end validation section-->
-
         </div>
     </div>
+
 
 </asp:Content>
