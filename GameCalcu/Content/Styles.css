@@ -2,11 +2,14 @@
     
 }
 
+.navbar-brand{
+    padding: 5px;
+}
+
 .divider{
     width: auto;
     height: auto;
     padding-top: 20px;
-
 }
 
 #MainContent {
@@ -24,6 +27,100 @@
   min-height: 100%;
 }
 
-.navbar-brand{
-    padding: 5px;
+h1 {
+  font-family: 'Changa One', cursive;
+  padding-left: 10px;
+  color: #fff;
+  font-size: 32px;
+  background-color: rgba(81, 81, 81, 0.7);
+  opacity: .7;
+
+  border-top-left-radius: 100px 50px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 50px 100px;
+  border-bottom-left-radius: 15px;
+}
+
+p {
+  font-family: 'Changa One', cursive;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 20px;
+  color: #fff;
+  font-size: 20px;
+  background-color: rgba(81, 81, 81, 0.7);
+  opacity: .7;
+
+  border-top-left-radius: 15px;
+  border-top-right-radius: 75px 50px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 50px 75px;
+}
+
+.validation{
+   font-family: 'Changa One', cursive;
+  color: orangered;
+  font-size: 16px;
+}
+
+.nextButton{
+    float: right;
+}
+
+.backButton{
+    float:left;
+}
+
+.button {
+    font-family: 'Changa One', cursive;
+    color: white;
+    font-size: 14px;
+    padding: 14px 24px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border: none;
+
+    background: url(../Images/buttonA.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.8;
+    display: inline-block;
+    background-size: 55px 55px;
+}
+
+.button:hover{
+    color:black;
+    background-image: url(../Images/buttonB.png);
+    background-repeat: no-repeat;
+    opacity: 0.8;
+    border: none;
+    display: inline-block;
+    background-size: 55px 55px;
+}
+
+.input-group-addon {
+    color: white;
+    background-color: rgba(81, 81, 81, 0.7);
+}
+
+.form-control{
+    background-color: rgba(81, 81, 81, 0.7);
+    color: white;
+}
+
+
+.panel-transparent {
+	background: none;
+}
+
+.panel-transparent .panel-heading{
+    background:rgba(81, 81, 81, 0.7)!important;
+    color: #fff;
+}
+
+.panel > .panel-body{
+     color: white;
+    background-color: rgba(81, 81, 81, 0.7);
 }

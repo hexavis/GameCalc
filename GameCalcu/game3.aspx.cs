@@ -13,7 +13,23 @@ namespace GameCalcu
         public static decimal playerScore, opponentScore, pointsAllowed;
         protected void Page_Load(object sender, EventArgs e)
         {
+            TextBoxFScore.Text = "100";
 
+            if (playerScore > 0)
+            {
+                TextBoxPScore.Text = playerScore.ToString();
+                TextBoxOScore.Text = opponentScore.ToString();
+                TextBoxFScore.Text = pointsAllowed.ToString();
+                TextBoxSpec.Text = specNum.ToString();
+                if (gameStatus == 1)
+                {
+                    status.SelectedValue = "win";
+                }
+                else
+                {
+                    status.SelectedValue = "lose";
+                }
+            }
         }
 
         protected void nextB_Click(object sender, EventArgs e)
@@ -54,6 +70,13 @@ namespace GameCalcu
                 args.IsValid = true;
             }
 
+        }
+
+        protected void backB_Click(object sender, EventArgs e)
+        {
+       
+            Response.Redirect("game2.aspx");
+           
         }
     }
 }

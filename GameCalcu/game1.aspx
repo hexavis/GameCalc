@@ -16,10 +16,10 @@
             </div>
 
             <div class="col-md-6">
-
+                <h1>Game 1</h1>
                 <!-- Did you win or lose? Radio Buttons -->
-                <div class="panel panel-default">
-                    <div class="panel-heading">
+                <div class="panel panel-default panel-transparent">
+                    <div class="panel-heading panel-heading-custom">
                         <label for="statusLabel">Did you win or lose: </label>
                     </div>
                     <div class="panel-body">
@@ -71,8 +71,9 @@
 
                 <!-- the next button -->
                 <div class="divider"></div>
-                <asp:Button ID="nextB" runat="server" Text="Next" OnClick="nextB_Click" />
-
+                <div class="nextButton">
+                    <asp:Button CssClass="button" ID="nextB" runat="server" Text="Next" OnClick="nextB_Click" />
+                </div>
                 <!-- Validation stuff-->
 
 
@@ -80,6 +81,7 @@
             </div>
             <!-- end col-md-6 -->
             <div class="col-md-4">
+                <div class="divider"></div>
                 <div class="validation">
                     <!-- required fields-->
                     <div>
@@ -138,7 +140,8 @@
                         <asp:CustomValidator ID="NotOver" runat="server" ControlToValidate="TextBoxFScore" OnServerValidate="NotOver_ServerValidate" ValidateEmptyText="True" SetFocusOnError="true" Display="Dynamic" ErrorMessage="Player Score plus Opponent Score cannot be greater than Points Allowed."></asp:CustomValidator>
                     </div>
                 </div>
-            </div><!-- end validation section-->
+            </div>
+            <!-- end validation section-->
         </div>
     </div>
 

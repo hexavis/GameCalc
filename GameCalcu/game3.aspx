@@ -16,9 +16,9 @@
             </div>
 
             <div class="col-md-6">
-
+                <h1>Game 3</h1>
                 <!-- Did you win or lose? Radio Buttons -->
-                <div class="panel panel-default">
+                <div class="panel panel-default panel-transparent">
                     <div class="panel-heading">
                         <label for="statusLabel">Did you win or lose: </label>
                     </div>
@@ -68,7 +68,12 @@
 
                 <!-- the next and submit button -->
                 <div class="divider"></div>
-                <asp:Button ID="nextB" runat="server" Text="Next" OnClick="nextB_Click" />
+                <div class="backButton">
+                    <asp:Button CssClass="button" ID="backB" runat="server" Text="Back" OnClick="backB_Click" CausesValidation="False" />
+                </div>
+               <div class="nextButton">
+                    <asp:Button CssClass="button" ID="nextB" runat="server" Text="Next" OnClick="nextB_Click" />
+                </div>
 
             </div>
             <!-- end col-md-6 -->

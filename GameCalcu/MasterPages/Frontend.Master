@@ -12,6 +12,8 @@
     <link href="/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <link href="/Content/bootstrap-theme.min.css" rel="stylesheet" />
     <link href="/Content/Styles.css" rel="stylesheet" type="text/css" />
+
+    <link href='http://fonts.googleapis.com/css?family=Changa+One' rel='stylesheet' type='text/css'>
 </head>
 <body>
     <div class="container-fluid">
@@ -71,5 +73,6 @@
     <!-- JavaScript Library Section -->
     <script src="/Scripts/jquery-1.9.1.min.js"></script>
     <script src="/Scripts/bootstrap.min.js"></script>
+
 </body>
 </html>

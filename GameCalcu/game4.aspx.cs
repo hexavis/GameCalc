@@ -15,7 +15,7 @@ namespace GameCalcu
 
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            TextBoxFScore.Text = "100";
         }
 
         protected void submitB_Click(object sender, EventArgs e)
@@ -56,6 +56,13 @@ namespace GameCalcu
                 args.IsValid = true;
             }
 
+        }
+
+        protected void backB_Click(object sender, EventArgs e)
+        {
+
+              Response.Redirect("game3.aspx");
+          
         }
     }
 }
