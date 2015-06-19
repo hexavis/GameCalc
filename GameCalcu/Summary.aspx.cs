@@ -52,11 +52,32 @@ namespace GameCalcu
 
         protected void restart_Click(object sender, EventArgs e)
         {
-            //Start the process over again. RESET.
+            //Start the process over again. RESET All.
             game1.playerScore = 0;
+            game1.opponentScore = 0;
+            game1.gameStatus = 0;
+            game1.pointsAllowed = 0;
+            game1.specNum = 0;
+
             game2.playerScore = 0;
+            game2.opponentScore = 0;
+            game2.gameStatus = 0;
+            game2.pointsAllowed = 0;
+            game2.specNum = 0;
+
             game3.playerScore = 0;
+            game3.opponentScore = 0;
+            game3.gameStatus = 0;
+            game3.pointsAllowed = 0;
+            game3.specNum = 0;
+
             game4.playerScore = 0;
+            game4.playerScore = 0;
+            game4.opponentScore = 0;
+            game4.gameStatus = 0;
+            game4.pointsAllowed = 0;
+            game4.specNum = 0;
+
 
             Server.Transfer("Default.aspx", true);
 
