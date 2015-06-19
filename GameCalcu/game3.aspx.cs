@@ -13,6 +13,9 @@ namespace GameCalcu
         public static decimal playerScore, opponentScore, pointsAllowed;
         protected void Page_Load(object sender, EventArgs e)
         {
+            //This function will automatically set points allowed to 100 due to splatoon scoring.
+            //Also if you use the back button the user inputed data will be added back into the textboxes.
+
             TextBoxFScore.Text = "100";
 
             if (playerScore > 0)
@@ -34,7 +37,7 @@ namespace GameCalcu
 
         protected void nextB_Click(object sender, EventArgs e)
         {
-            //gather and validate the information for game 1
+            //Force validation, set the game information to necessary variables and then go to next page
             Page.Validate();
             if (Page.IsValid)
             {
@@ -56,6 +59,7 @@ namespace GameCalcu
 
         protected void NotOver_ServerValidate(object source, ServerValidateEventArgs args)
         {
+            //validates that player score and opponent scores do not exceed allowed scores
             decimal allowP = System.Convert.ToDecimal(TextBoxFScore.Text);
             decimal playS = System.Convert.ToDecimal(TextBoxPScore.Text);
             decimal oppS = System.Convert.ToDecimal(TextBoxOScore.Text);
@@ -74,9 +78,11 @@ namespace GameCalcu
 
         protected void backB_Click(object sender, EventArgs e)
         {
-       
+            //Allows the user to go back a page.
             Response.Redirect("game2.aspx");
            
         }
+
+
     }
 }

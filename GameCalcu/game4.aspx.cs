@@ -15,12 +15,13 @@ namespace GameCalcu
 
         protected void Page_Load(object sender, EventArgs e)
         {
+            //Automatically set allowed score to 100
             TextBoxFScore.Text = "100";
         }
 
         protected void submitB_Click(object sender, EventArgs e)
         {
-            //gather and validate the information for game 1
+            //Force validation, set the game information to necessary variables and then go to next page
             Page.Validate();
             if (Page.IsValid)
             {
@@ -42,6 +43,7 @@ namespace GameCalcu
 
         protected void NotOver_ServerValidate(object source, ServerValidateEventArgs args)
         {
+            //validates that player score and opponent scores do not exceed allowed scores
             decimal allowP = System.Convert.ToDecimal(TextBoxFScore.Text);
             decimal playS = System.Convert.ToDecimal(TextBoxPScore.Text);
             decimal oppS = System.Convert.ToDecimal(TextBoxOScore.Text);
@@ -60,9 +62,11 @@ namespace GameCalcu
 
         protected void backB_Click(object sender, EventArgs e)
         {
-
+            //Allows the user to go back a page.
               Response.Redirect("game3.aspx");
           
         }
+
+
     }
 }
