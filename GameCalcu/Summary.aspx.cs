@@ -38,7 +38,7 @@ namespace GameCalcu
             allowScore.Text = allowscore.ToString();
 
             //Calculates the score differential
-            decimal diff = pscore - oscore;
+            decimal diff = pscore - allowscore;
             scoreDif.Text = diff.ToString();
 
             //Calculates the total number of spectators
@@ -53,30 +53,30 @@ namespace GameCalcu
         protected void restart_Click(object sender, EventArgs e)
         {
             //Start the process over again. RESET All.
-            game1.playerScore = 0;
-            game1.opponentScore = 0;
-            game1.gameStatus = 0;
-            game1.pointsAllowed = 0;
-            game1.specNum = 0;
+            game1.playerScore = -1;
+            game1.opponentScore = -1;
+            game1.gameStatus = -1;
+            game1.pointsAllowed = -1;
+            game1.specNum = -1;
 
-            game2.playerScore = 0;
-            game2.opponentScore = 0;
-            game2.gameStatus = 0;
-            game2.pointsAllowed = 0;
-            game2.specNum = 0;
+            game2.playerScore =-1;
+            game2.opponentScore = -1;
+            game2.gameStatus = -1;
+            game2.pointsAllowed = -1;
+            game2.specNum = -1;
 
-            game3.playerScore = 0;
-            game3.opponentScore = 0;
-            game3.gameStatus = 0;
-            game3.pointsAllowed = 0;
-            game3.specNum = 0;
+            game3.playerScore = -1;
+            game3.opponentScore = -1;
+            game3.gameStatus = -1;
+            game3.pointsAllowed = -1;
+            game3.specNum = -1;
 
-            game4.playerScore = 0;
-            game4.playerScore = 0;
-            game4.opponentScore = 0;
-            game4.gameStatus = 0;
-            game4.pointsAllowed = 0;
-            game4.specNum = 0;
+            game4.playerScore = -1;
+            game4.playerScore = -1;
+            game4.opponentScore = -1;
+            game4.gameStatus = -1;
+            game4.pointsAllowed = -1;
+            game4.specNum = -1;
 
 
             Server.Transfer("Default.aspx", true);

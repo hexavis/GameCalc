@@ -10,8 +10,8 @@ namespace GameCalcu
     public partial class game4 : System.Web.UI.Page
     {
 
-        public static int specNum, gameStatus = 0;
-        public static decimal playerScore, opponentScore, pointsAllowed;
+        public static int specNum = -1, gameStatus = 0;
+        public static decimal playerScore = -1, opponentScore = -1, pointsAllowed = -1;
 
         protected void Page_Load(object sender, EventArgs e)
         {

@@ -23,14 +23,14 @@
                     <img src="Images/results.jpg" />
                 </p>
                 <p>
-                    These two teams did a terrible job of covering the arean. tsk tsk. Oh well. Have fun with the Calculator~!
+                    These two teams did a terrible job of covering the arean. tsk tsk. Oh well. Have fun with the Calculator~! <3
                 </p>
                 
          
     </div>
             <div class="col-md-4">
                 <div class="divider"></div>
-                <asp:Button CssClass="button" ID="beginB" runat="server" Text="Begin" OnClick="beginB_Click" />
+                <asp:Button CssClass="button" ID="beginB" runat="server" Text="Begin" OnClick="beginB_Click"  />
             </div>
     </div>
 

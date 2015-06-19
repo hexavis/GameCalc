@@ -9,8 +9,8 @@ namespace GameCalcu
 {
     public partial class game3 : System.Web.UI.Page
     {
-        public static int specNum, gameStatus = 0;
-        public static decimal playerScore, opponentScore, pointsAllowed;
+        public static int specNum = -1, gameStatus = 0;
+        public static decimal playerScore = -1, opponentScore = -1, pointsAllowed = -1;
         protected void Page_Load(object sender, EventArgs e)
         {
             //This function will automatically set points allowed to 100 due to splatoon scoring.
@@ -18,7 +18,7 @@ namespace GameCalcu
 
             TextBoxFScore.Text = "100";
 
-            if (playerScore > 0)
+            if (playerScore > -1)
             {
                 TextBoxPScore.Text = playerScore.ToString();
                 TextBoxOScore.Text = opponentScore.ToString();
